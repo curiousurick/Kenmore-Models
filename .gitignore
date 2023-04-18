@@ -1,6 +1,6 @@
 *.DS_Store
-FloatplaneApp-DataStores.xcodeproj/project.xcworkspace/xcuserdata
 .swiftpm/xcode
+FloatplaneApp-Models.xcodeproj/project.xcworkspace/xcuserdata
 
 # Xcode
 #
