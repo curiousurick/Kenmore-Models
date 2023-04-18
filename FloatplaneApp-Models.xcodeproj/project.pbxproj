@@ -61,6 +61,11 @@
 		5E389C4929D8BBBE00FC8B4B /* QualityLevelResourceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E389C4829D8BBBE00FC8B4B /* QualityLevelResourceData.swift */; };
 		5E389C4B29D8BDC600FC8B4B /* ResourceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E389C4A29D8BDC600FC8B4B /* ResourceData.swift */; };
 		5E4CE96E29DA0C1B0029110E /* GetFirstPageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4CE96D29DA0C1A0029110E /* GetFirstPageResponse.swift */; };
+		5E51555229EE7546009B68EA /* swiftformat.sh in Resources */ = {isa = PBXBuildFile; fileRef = 5E51554F29EE7546009B68EA /* swiftformat.sh */; };
+		5E51555329EE7546009B68EA /* xcodebuilds.sh in Resources */ = {isa = PBXBuildFile; fileRef = 5E51555029EE7546009B68EA /* xcodebuilds.sh */; };
+		5E51555429EE7546009B68EA /* build.sh in Resources */ = {isa = PBXBuildFile; fileRef = 5E51555129EE7546009B68EA /* build.sh */; };
+		5E51555629EE754E009B68EA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5E51555529EE754E009B68EA /* README.md */; };
+		5E51555B29EE75ED009B68EA /* codecoverage.yml in Resources */ = {isa = PBXBuildFile; fileRef = 5E51555A29EE75ED009B68EA /* codecoverage.yml */; };
 		5ECCD48329EC6817004EA76C /* PlaybackSpeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECCD48229EC6817004EA76C /* PlaybackSpeed.swift */; };
 /* End PBXBuildFile section */
 
@@ -132,6 +137,11 @@
 		5E389C4829D8BBBE00FC8B4B /* QualityLevelResourceData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QualityLevelResourceData.swift; sourceTree = "<group>"; };
 		5E389C4A29D8BDC600FC8B4B /* ResourceData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceData.swift; sourceTree = "<group>"; };
 		5E4CE96D29DA0C1A0029110E /* GetFirstPageResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetFirstPageResponse.swift; sourceTree = "<group>"; };
+		5E51554F29EE7546009B68EA /* swiftformat.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = swiftformat.sh; sourceTree = "<group>"; };
+		5E51555029EE7546009B68EA /* xcodebuilds.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = xcodebuilds.sh; sourceTree = "<group>"; };
+		5E51555129EE7546009B68EA /* build.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = build.sh; sourceTree = "<group>"; };
+		5E51555529EE754E009B68EA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		5E51555A29EE75ED009B68EA /* codecoverage.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; name = codecoverage.yml; path = .github/workflows/codecoverage.yml; sourceTree = SOURCE_ROOT; };
 		5ECCD48229EC6817004EA76C /* PlaybackSpeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackSpeed.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -200,6 +210,7 @@
 		5E389AEE29D8B1A500FC8B4B = {
 			isa = PBXGroup;
 			children = (
+				5E51554E29EE7546009B68EA /* scripts */,
 				5E389AFA29D8B1A500FC8B4B /* FloatplaneApp-Models */,
 				5E389B0629D8B1A500FC8B4B /* FloatplaneApp-ModelsTests */,
 				5E389AF929D8B1A500FC8B4B /* Products */,
@@ -386,6 +397,18 @@
 			path = "Get First Page";
 			sourceTree = "<group>";
 		};
+		5E51554E29EE7546009B68EA /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+				5E51555529EE754E009B68EA /* README.md */,
+				5E51554F29EE7546009B68EA /* swiftformat.sh */,
+				5E51555029EE7546009B68EA /* xcodebuilds.sh */,
+				5E51555A29EE75ED009B68EA /* codecoverage.yml */,
+				5E51555129EE7546009B68EA /* build.sh */,
+			);
+			path = scripts;
+			sourceTree = "<group>";
+		};
 		5ECCD48129EC680B004EA76C /* Playback Speed */ = {
 			isa = PBXGroup;
 			children = (
@@ -485,7 +508,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E51555329EE7546009B68EA /* xcodebuilds.sh in Resources */,
+				5E51555429EE7546009B68EA /* build.sh in Resources */,
+				5E51555629EE754E009B68EA /* README.md in Resources */,
 				5E389BFD29D8B62A00FC8B4B /* FloatplaneApp_Models.docc in Resources */,
+				5E51555229EE7546009B68EA /* swiftformat.sh in Resources */,
+				5E51555B29EE75ED009B68EA /* codecoverage.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
