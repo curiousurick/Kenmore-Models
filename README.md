@@ -1,11 +1,5 @@
 # FloatplaneApp-Models
-This is the model library for FloatplaneApp for iOS. It contains the requests and responses for API operations. In addition, it contains whatever models an app may need.
-
-| ![image](Assets/Browse_Screenshot.png) | ![image](Assets/LiveOffline_Screenshot.png) |
-| --- | --- |
-
-| ![image](Assets/Search_Screenshot.png) | ![image](Assets/Login_Screenshot.png) |
-| --- | --- |
+This is the model library for FloatplaneApp for iOS and tvOS. It contains the requests and responses for API operations. In addition, it contains whatever models an app may need.
 
 # Setup
 Follow these instructions to get this app installed on your Apple TV or tvOS simulator.
