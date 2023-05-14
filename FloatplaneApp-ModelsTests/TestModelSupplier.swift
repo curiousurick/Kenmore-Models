@@ -153,9 +153,11 @@ enum TestModelSupplier {
     static let updatedAt = Date()
     static let user = "user"
     static let userNotificationSettings = UserNotificationSetting(
-        contentEmail: contentEmail, contentFirebase: contentFirebase, createdAt: createdAt,
-        creator: creatorString, creatorMessageEmail: creatorMessageEmail, id: id,
-        updatedAt: updatedAt, user: user
+        contentEmail: contentEmail,
+        contentFirebase: contentFirebase,
+        creator: creatorString,
+        creatorMessageEmail: creatorMessageEmail,
+        user: user
     )
     static let creatorResponseObject = CreatorListResponse.CreatorResponseObject(
         creator: baseCreator,

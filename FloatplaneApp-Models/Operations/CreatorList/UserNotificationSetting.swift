@@ -25,24 +25,21 @@ import Foundation
 public struct UserNotificationSetting: Codable, Equatable {
     public let contentEmail: Bool
     public let contentFirebase: Bool
-    public let createdAt: Date
     public let creator: String
     public let creatorMessageEmail: Bool
-    public let id: String
-    public let updatedAt: Date
     public let user: String
 
     public init(
-        contentEmail: Bool, contentFirebase: Bool, createdAt: Date, creator: String,
-        creatorMessageEmail: Bool, id: String, updatedAt: Date, user: String
+        contentEmail: Bool,
+        contentFirebase: Bool,
+        creator: String,
+        creatorMessageEmail: Bool,
+        user: String
     ) {
         self.contentEmail = contentEmail
         self.contentFirebase = contentFirebase
-        self.createdAt = createdAt
         self.creator = creator
         self.creatorMessageEmail = creatorMessageEmail
-        self.id = id
-        self.updatedAt = updatedAt
         self.user = user
     }
 }
