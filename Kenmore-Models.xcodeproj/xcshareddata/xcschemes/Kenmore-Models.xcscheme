@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1420"
+   LastUpgradeVersion = "1430"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5E389AF729D8B1A500FC8B4B"
-               BuildableName = "FloatplaneApp_Models.framework"
-               BlueprintName = "FloatplaneApp-Models"
-               ReferencedContainer = "container:FloatplaneApp-Models.xcodeproj">
+               BuildableName = "Kenmore_Models.framework"
+               BlueprintName = "Kenmore-Models"
+               ReferencedContainer = "container:Kenmore-Models.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5E389AF729D8B1A500FC8B4B"
-            BuildableName = "FloatplaneApp_Models.framework"
-            BlueprintName = "FloatplaneApp-Models"
-            ReferencedContainer = "container:FloatplaneApp-Models.xcodeproj">
+            BuildableName = "Kenmore_Models.framework"
+            BlueprintName = "Kenmore-Models"
+            ReferencedContainer = "container:Kenmore-Models.xcodeproj">
          </BuildableReference>
       </CodeCoverageTargets>
       <Testables>
@@ -45,9 +45,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5E389B0129D8B1A500FC8B4B"
-               BuildableName = "FloatplaneApp-ModelsTests.xctest"
-               BlueprintName = "FloatplaneApp-ModelsTests"
-               ReferencedContainer = "container:FloatplaneApp-Models.xcodeproj">
+               BuildableName = "Kenmore-ModelsTests.xctest"
+               BlueprintName = "Kenmore-ModelsTests"
+               ReferencedContainer = "container:Kenmore-Models.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -73,9 +73,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5E389AF729D8B1A500FC8B4B"
-            BuildableName = "FloatplaneApp_Models.framework"
-            BlueprintName = "FloatplaneApp-Models"
-            ReferencedContainer = "container:FloatplaneApp-Models.xcodeproj">
+            BuildableName = "Kenmore_Models.framework"
+            BlueprintName = "Kenmore-Models"
+            ReferencedContainer = "container:Kenmore-Models.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

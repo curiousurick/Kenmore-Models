@@ -20,7 +20,7 @@
 //
 
 import XCTest
-@testable import FloatplaneApp_Models
+@testable import Kenmore_Models
 
 class ResourceDataTest: XCTestCase {
     private let encoder = JSONEncoder()

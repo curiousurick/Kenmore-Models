@@ -20,32 +20,21 @@
 //
 
 import XCTest
-@testable import FloatplaneApp_Models
+@testable import Kenmore_Models
 
-class DeliveryKeyTest: XCTestCase {
-    private let encoder = JSONEncoder()
-    private let decoder = JSONDecoder()
-
-    func testEncode() throws {
-        // Arrange
-        let deliveryKey = TestModelSupplier.deliveryKey
-
+class BoolStringValueTest: XCTestCase {
+    func testStringValueTrue() {
         // Act
-        let result = try encoder.encode(deliveryKey)
-
+        let trueString = true.stringValue
         // Assert
-        XCTAssertNotNil(result)
+        XCTAssertEqual("true", trueString)
     }
 
-    func testDecode() throws {
-        // Arrange
-        let deliveryKey = TestModelSupplier.deliveryKey
-
+    func testStringValueFalse() {
         // Act
-        let data = try encoder.encode(deliveryKey)
-        let decoded = try decoder.decode(DeliveryKey.self, from: data)
+        let trueString = false.stringValue
 
         // Assert
-        XCTAssertEqual(decoded, deliveryKey)
+        XCTAssertEqual("false", trueString)
     }
 }

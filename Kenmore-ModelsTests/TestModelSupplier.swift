@@ -20,7 +20,7 @@
 //
 
 import Foundation
-@testable import FloatplaneApp_Models
+@testable import Kenmore_Models
 
 enum TestingError: Error, Equatable {
     case reallyBad
