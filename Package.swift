@@ -26,7 +26,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "FloatplaneApp-Models",
+    name: "Kenmore-Models",
     platforms: [
         .macOS(.v12),
         .iOS(.v15),
@@ -34,20 +34,20 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "FloatplaneApp-Models",
-            targets: ["FloatplaneApp-Models"]
+            name: "Kenmore-Models",
+            targets: ["Kenmore-Models"]
         ),
     ],
     targets: [
         .target(
-            name: "FloatplaneApp-Models",
-            path: "FloatplaneApp-Models",
+            name: "Kenmore-Models",
+            path: "Kenmore-Models",
             exclude: []
         ),
         .testTarget(
-            name: "FloatplaneApp-ModelsTests",
-            dependencies: ["FloatplaneApp-Models"],
-            path: "FloatplaneApp-ModelsTests",
+            name: "Kenmore-ModelsTests",
+            dependencies: ["Kenmore-Models"],
+            path: "Kenmore-ModelsTests",
             exclude: [],
             resources: []
         ),
