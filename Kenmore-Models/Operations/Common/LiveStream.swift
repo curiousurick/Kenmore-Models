@@ -26,10 +26,10 @@ public struct LiveStream: Hashable, Codable, Equatable {
     /// Info for display when the livestream is offline.
     public struct Offline: Hashable, Codable, Equatable {
         public let description: String
-        public let thumbnail: Icon
-        public let title: String
+        public let thumbnail: Icon?
+        public let title: String?
 
-        public init(description: String, thumbnail: Icon, title: String) {
+        public init(description: String, thumbnail: Icon?, title: String?) {
             self.description = description
             self.thumbnail = thumbnail
             self.title = title
