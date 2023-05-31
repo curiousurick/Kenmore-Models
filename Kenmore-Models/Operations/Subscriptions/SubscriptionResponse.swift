@@ -34,7 +34,7 @@ public struct Subscription: Hashable, Codable, Equatable {
         public let id: String
         public let interval: Interval
         public let logo: Icon?
-        public let price: String
+        public let price: String?
         public let priceYearly: String?
         public let title: String
 
