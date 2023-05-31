@@ -29,13 +29,13 @@ public struct Channel: Hashable, Codable, Equatable {
     public let creator: String
     public let icon: Icon
     public let id: String
-    public let order: UInt64
+    public let order: UInt64?
     public let title: String
     public let urlname: String
 
     public init(
         about: String, card: String?, cover: String?, creator: String,
-        icon: Icon, id: String, order: UInt64, title: String, urlname: String
+        icon: Icon, id: String, order: UInt64?, title: String, urlname: String
     ) {
         self.about = about
         self.card = card
