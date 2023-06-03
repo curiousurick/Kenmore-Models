@@ -23,7 +23,7 @@ import Foundation
 
 /// Typed request to get the first page of content.
 public struct GetFirstPageRequest: OperationRequest {
-    var activeCreatorId: String?
+    public var activeCreatorId: String?
 
     public init(activeCreatorId: String? = nil) {
         self.activeCreatorId = activeCreatorId
