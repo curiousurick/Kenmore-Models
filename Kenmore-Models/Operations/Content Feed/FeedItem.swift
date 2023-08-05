@@ -25,27 +25,27 @@ import Foundation
 public struct FeedItem: Hashable, Codable, Equatable {
     public let availableItem: AvailableFeedItem?
     public let lockedItem: LockedFeedItem?
-    
+
     init(availableItem: AvailableFeedItem) {
         self.availableItem = availableItem
-        self.lockedItem = nil
+        lockedItem = nil
     }
-    
+
     init(lockedItem: LockedFeedItem) {
         self.lockedItem = lockedItem
-        self.availableItem = nil
+        availableItem = nil
     }
-    
+
     public init(from decoder: Decoder) throws {
         if let available = try? decoder.container(keyedBy: AvailableFeedItem.CodingKeys.self),
            let _ = try? available.decode(Channel.self, forKey: AvailableFeedItem.CodingKeys.channel) {
-            self.init(availableItem: try AvailableFeedItem(from: decoder))
+            try self.init(availableItem: AvailableFeedItem(from: decoder))
         }
         else {
-            self.init(lockedItem: try LockedFeedItem(from: decoder))
+            try self.init(lockedItem: LockedFeedItem(from: decoder))
         }
     }
-    
+
     public func encode(to encoder: Encoder) throws {
         var container = encoder.singleValueContainer()
         if let availableItem = availableItem {
@@ -80,7 +80,7 @@ public struct AvailableFeedItem: Hashable, Codable, Equatable {
     public let type: VideoType
     public let videoAttachments: [String]
     public let wasReleasedSilently: Bool
-    
+
     enum CodingKeys: CodingKey {
         case attachmentOrder
         case audioAttachments
@@ -159,7 +159,7 @@ public struct LockedFeedItem: Codable, Equatable, Hashable {
     public let title: String
     public let type: VideoType
     public let wasReleasedSilently: Bool
-    
+
     enum CodingKeys: CodingKey {
         case attachmentOrder
         case channel
