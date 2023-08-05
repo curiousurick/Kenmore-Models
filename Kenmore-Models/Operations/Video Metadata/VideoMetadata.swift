@@ -28,7 +28,7 @@ public struct VideoMetadata: Codable, Equatable {
     public let guid: String
     public let title: String
     public let type: PostType
-    public let channel: Channel
+    public let channel: Channel?
     public let description: String
     public let releaseDate: Date?
     public let duration: UInt64

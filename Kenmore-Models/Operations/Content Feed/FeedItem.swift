@@ -25,7 +25,7 @@ import Foundation
 public struct FeedItem: Hashable, Codable, Equatable {
     public let attachmentOrder: [String]
     public let audioAttachments: [String]?
-    public let channel: Channel
+    public let channel: Channel?
     public let comments: UInt64
     public let creator: ContentCreator
     public let dislikes: UInt64

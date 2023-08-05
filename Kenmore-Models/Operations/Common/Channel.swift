@@ -47,4 +47,17 @@ public struct Channel: Hashable, Codable, Equatable {
         self.title = title
         self.urlname = urlname
     }
+
+    public init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        about = try container.decode(String.self, forKey: .about)
+        card = try container.decodeIfPresent(String.self, forKey: .card)
+        cover = try container.decodeIfPresent(String.self, forKey: .cover)
+        creator = try container.decode(String.self, forKey: .creator)
+        icon = try container.decode(Icon.self, forKey: .icon)
+        id = try container.decode(String.self, forKey: .id)
+        order = try container.decodeIfPresent(UInt64.self, forKey: .order)
+        title = try container.decode(String.self, forKey: .title)
+        urlname = try container.decode(String.self, forKey: .urlname)
+    }
 }
