@@ -18,6 +18,7 @@
 		5E1FD74929DD47B80015AE6F /* GetFirstPageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1FD74829DD47B80015AE6F /* GetFirstPageRequest.swift */; };
 		5E1FD75129DD4CCB0015AE6F /* LogoutRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1FD75029DD4CCB0015AE6F /* LogoutRequest.swift */; };
 		5E1FD75329DD4CE30015AE6F /* LogoutResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1FD75229DD4CE30015AE6F /* LogoutResponse.swift */; };
+		5E2303882A7ECB22006D7132 /* ChannelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2303872A7ECB22006D7132 /* ChannelTest.swift */; };
 		5E389B0329D8B1A500FC8B4B /* Kenmore_Models.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E389AF829D8B1A500FC8B4B /* Kenmore_Models.framework */; };
 		5E389BD429D8B5A300FC8B4B /* DeliveryKeyQualityLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E389B9F29D8B5A300FC8B4B /* DeliveryKeyQualityLevel.swift */; };
 		5E389BD629D8B5A300FC8B4B /* ContentCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E389BA329D8B5A300FC8B4B /* ContentCreator.swift */; };
@@ -85,6 +86,7 @@
 		5E1FD74829DD47B80015AE6F /* GetFirstPageRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetFirstPageRequest.swift; sourceTree = "<group>"; };
 		5E1FD75029DD4CCB0015AE6F /* LogoutRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutRequest.swift; sourceTree = "<group>"; };
 		5E1FD75229DD4CE30015AE6F /* LogoutResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutResponse.swift; sourceTree = "<group>"; };
+		5E2303872A7ECB22006D7132 /* ChannelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelTest.swift; sourceTree = "<group>"; };
 		5E389AF829D8B1A500FC8B4B /* Kenmore_Models.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kenmore_Models.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E389AFC29D8B1A500FC8B4B /* Kenmore_Models.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Kenmore_Models.docc; sourceTree = "<group>"; };
 		5E389B0229D8B1A500FC8B4B /* Kenmore-ModelsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kenmore-ModelsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -160,6 +162,7 @@
 		5E08F46D29E07048003C3694 /* Operations */ = {
 			isa = PBXGroup;
 			children = (
+				5E2303862A7ECB1B006D7132 /* Common */,
 				5E08F46E29E0704C003C3694 /* Delivery Key */,
 			);
 			path = Operations;
@@ -198,6 +201,14 @@
 				5E1FD75229DD4CE30015AE6F /* LogoutResponse.swift */,
 			);
 			path = Logout;
+			sourceTree = "<group>";
+		};
+		5E2303862A7ECB1B006D7132 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				5E2303872A7ECB22006D7132 /* ChannelTest.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		5E389AEE29D8B1A500FC8B4B = {
@@ -575,6 +586,7 @@
 				5E08F47429E07547003C3694 /* QualityLevelParamsTest.swift in Sources */,
 				5E08F47629E078FA003C3694 /* ResourceDataTest.swift in Sources */,
 				5E08F47029E0705A003C3694 /* DeliveryKeyTest.swift in Sources */,
+				5E2303882A7ECB22006D7132 /* ChannelTest.swift in Sources */,
 				5E08F49D29E135F5003C3694 /* Bool+StringTest.swift in Sources */,
 				5E08F47229E07137003C3694 /* TestModelSupplier.swift in Sources */,
 			);

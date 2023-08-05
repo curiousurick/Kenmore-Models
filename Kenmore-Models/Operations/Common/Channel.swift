@@ -27,7 +27,7 @@ public struct Channel: Hashable, Codable, Equatable {
     public let card: String?
     public let cover: String?
     public let creator: String
-    public let icon: Icon
+    public let icon: Icon?
     public let id: String
     public let order: UInt64?
     public let title: String
@@ -35,7 +35,7 @@ public struct Channel: Hashable, Codable, Equatable {
 
     public init(
         about: String, card: String?, cover: String?, creator: String,
-        icon: Icon, id: String, order: UInt64?, title: String, urlname: String
+        icon: Icon?, id: String, order: UInt64?, title: String, urlname: String
     ) {
         self.about = about
         self.card = card
@@ -48,16 +48,44 @@ public struct Channel: Hashable, Codable, Equatable {
         self.urlname = urlname
     }
 
+    public init() {
+        about = "unknown"
+        card = nil
+        cover = nil
+        creator = "unknown"
+        icon = nil
+        id = "unknown"
+        order = nil
+        title = "unknown"
+        urlname = "unknown"
+    }
+
     public init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: CodingKeys.self)
-        about = try container.decode(String.self, forKey: .about)
-        card = try container.decodeIfPresent(String.self, forKey: .card)
-        cover = try container.decodeIfPresent(String.self, forKey: .cover)
-        creator = try container.decode(String.self, forKey: .creator)
-        icon = try container.decode(Icon.self, forKey: .icon)
-        id = try container.decode(String.self, forKey: .id)
-        order = try container.decodeIfPresent(UInt64.self, forKey: .order)
-        title = try container.decode(String.self, forKey: .title)
-        urlname = try container.decode(String.self, forKey: .urlname)
+        do {
+            let container = try decoder.container(keyedBy: CodingKeys.self)
+            let about = try container.decode(String.self, forKey: .about)
+            let card = try? container.decodeIfPresent(String.self, forKey: .card)
+            let cover = try? container.decodeIfPresent(String.self, forKey: .cover)
+            let creator = try container.decode(String.self, forKey: .creator)
+            let icon = try? container.decode(Icon.self, forKey: .icon)
+            let id = try container.decode(String.self, forKey: .id)
+            let order = try? container.decodeIfPresent(UInt64.self, forKey: .order)
+            let title = try container.decode(String.self, forKey: .title)
+            let urlname = try container.decode(String.self, forKey: .urlname)
+            self.init(
+                about: about,
+                card: card,
+                cover: cover,
+                creator: creator,
+                icon: icon,
+                id: id,
+                order: order,
+                title: title,
+                urlname: urlname
+            )
+        }
+        catch {
+            self.init()
+        }
     }
 }
