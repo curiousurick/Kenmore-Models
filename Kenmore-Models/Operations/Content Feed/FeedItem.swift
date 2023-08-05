@@ -43,16 +43,16 @@ public struct FeedItem: Hashable, Codable, Equatable {
     public let thumbnail: Icon
     public let title: String
     public let type: VideoType
-    public let videoAttachments: [String]
+    public let videoAttachments: [String]?
     public let wasReleasedSilently: Bool
 
     public init(
         attachmentOrder: [String], audioAttachments: [String]?, channel: Channel,
         comments: UInt64, creator: ContentCreator, dislikes: UInt64,
         galleryAttachments: [String], guid: String, id: String, isAccessible: Bool? = nil,
-        likes: UInt64, metadata: Metadata, pictureAttachments: [String], releaseDate: Date,
+        likes: UInt64, metadata: Metadata, pictureAttachments: [String]?, releaseDate: Date,
         score: UInt64, tags: [String], text: String, thumbnail: Icon, title: String,
-        type: VideoType, videoAttachments: [String], wasReleasedSilently: Bool
+        type: VideoType, videoAttachments: [String]?, wasReleasedSilently: Bool
     ) {
         self.attachmentOrder = attachmentOrder
         self.audioAttachments = audioAttachments
