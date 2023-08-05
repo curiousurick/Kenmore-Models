@@ -35,7 +35,7 @@ public struct FeedItem: Hashable, Codable, Equatable {
     public var isAccessible: Bool? = true
     public let likes: UInt64
     public let metadata: Metadata
-    public let pictureAttachments: [String]
+    public let pictureAttachments: [String]?
     public let releaseDate: Date
     public let score: UInt64
     public let tags: [String]
