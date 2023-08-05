@@ -130,14 +130,14 @@ enum TestModelSupplier {
     static let videoType = VideoType.blogPost
     static let videoAttachment = "video.mp4"
     static let wasReleasedSilently = true
-    static let feedItem = FeedItem(
+    static let feedItem = AvailableFeedItem(
         attachmentOrder: [attachmentOrder], audioAttachments: [audioAttachment], channel: channel, comments: comments,
         creator: contentCreator, dislikes: dislikes, galleryAttachments: [galleryAttachment], guid: guid, id: id,
         likes: likes, metadata: metadata, pictureAttachments: [pictureAttachment], releaseDate: releaseDate,
         score: score, tags: [tag], text: text, thumbnail: icon, title: title, type: videoType,
         videoAttachments: [videoAttachment], wasReleasedSilently: wasReleasedSilently
     )
-    static let creatorFeed = CreatorFeed(items: [feedItem])
+    static let creatorFeed = CreatorFeed(items: [FeedItem(availableItem: feedItem)])
 
     static let creatorListRequest = CreatorListRequest()
     static let baseCreator = BaseCreator(
@@ -267,7 +267,7 @@ enum TestModelSupplier {
         fetchAfter: fetchAfter,
         limit: Int(limit)
     )
-    static let searchResponse = SearchResponse(items: [feedItem])
+    static let searchResponse = SearchResponse(items: [FeedItem(availableItem: feedItem)])
 
     static let param1080 = QualityLevelParams.QualityLevelParam(filename: filename1080, accessToken: accessToken1080)
     static let param720 = QualityLevelParams.QualityLevelParam(filename: filename720, accessToken: accessToken720)

@@ -41,7 +41,7 @@ public struct VideoMetadata: Codable, Equatable {
     public let deliveryKey: DeliveryKey
 
     public init(
-        feedItem: FeedItem,
+        feedItem: AvailableFeedItem,
         contentVideoResponse: ContentVideoResponse,
         deliveryKey: DeliveryKey
     ) {

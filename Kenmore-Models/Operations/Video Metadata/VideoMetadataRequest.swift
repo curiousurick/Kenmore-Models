@@ -24,10 +24,10 @@ import Foundation
 /// The compound operation request to get video metadata and delivery key for a given video.
 /// Also includes the feedItem for the video for use in inclusion in the response.
 public struct VideoMetadataRequest: OperationRequest {
-    public let feedItem: FeedItem
+    public let feedItem: AvailableFeedItem
     public let id: String
 
-    public init(feedItem: FeedItem, id: String) {
+    public init(feedItem: AvailableFeedItem, id: String) {
         self.feedItem = feedItem
         self.id = id
     }
