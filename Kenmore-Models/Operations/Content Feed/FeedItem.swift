@@ -24,7 +24,7 @@ import Foundation
 /// Contains the info needed to display an item in the browse feed or search results.
 public struct FeedItem: Hashable, Codable, Equatable {
     public let attachmentOrder: [String]
-    public let audioAttachments: [String]
+    public let audioAttachments: [String]?
     public let channel: Channel
     public let comments: UInt64
     public let creator: ContentCreator
@@ -47,7 +47,7 @@ public struct FeedItem: Hashable, Codable, Equatable {
     public let wasReleasedSilently: Bool
 
     public init(
-        attachmentOrder: [String], audioAttachments: [String], channel: Channel,
+        attachmentOrder: [String], audioAttachments: [String]?, channel: Channel,
         comments: UInt64, creator: ContentCreator, dislikes: UInt64,
         galleryAttachments: [String], guid: String, id: String, isAccessible: Bool? = nil,
         likes: UInt64, metadata: Metadata, pictureAttachments: [String], releaseDate: Date,
