@@ -33,6 +33,7 @@ public enum DeliveryKeyQualityLevel: String, Codable, Equatable, Readable {
     case ql480p = "480-avc1"
     case ql720p = "720-avc1"
     case ql1080p = "1080-avc1"
+    case ql2160p = "2160-avc1"
     /// Used for live streams
     case liveAbr = "live-abr"
 
@@ -44,6 +45,7 @@ public enum DeliveryKeyQualityLevel: String, Codable, Equatable, Readable {
         .ql480p,
         .ql720p,
         .ql1080p,
+        .ql2160p,
     ]
 
     /// Known livestream quality levels
@@ -55,6 +57,7 @@ public enum DeliveryKeyQualityLevel: String, Codable, Equatable, Readable {
         .ql480p,
         .ql720p,
         .ql1080p,
+        .ql2160p,
         .liveAbr,
     ]
 
@@ -74,6 +77,8 @@ public enum DeliveryKeyQualityLevel: String, Codable, Equatable, Readable {
             return "720p"
         case .ql1080p:
             return "1080p"
+        case .ql2160p:
+            return "4K"
         case .liveAbr:
             return "Live"
         }
