@@ -26,12 +26,12 @@ public struct FeedItem: Hashable, Codable, Equatable {
     public let availableItem: AvailableFeedItem?
     public let lockedItem: LockedFeedItem?
 
-    init(availableItem: AvailableFeedItem) {
+    public init(availableItem: AvailableFeedItem) {
         self.availableItem = availableItem
         lockedItem = nil
     }
 
-    init(lockedItem: LockedFeedItem) {
+    public init(lockedItem: LockedFeedItem) {
         self.lockedItem = lockedItem
         availableItem = nil
     }

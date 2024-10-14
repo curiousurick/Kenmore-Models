@@ -24,7 +24,7 @@ import Foundation
 /// Response for a successful login.
 public struct LoginResponse: Codable, Equatable {
     public let user: User
-    /// TODO: Support 2FA. If this is true, app will fail to login as of 4/8/2023.
+    // TODO: Support 2FA. If this is true, app will fail to login as of 4/8/2023.
     public let needs2FA: Bool
 
     public init(user: User, needs2FA: Bool) {
